@@ -11,7 +11,7 @@ Template for Spring 3 MVC + JSP view + XML configuration, using Maven build tool
 
 ###2. To Run this project locally
 ```shell
-$ git clone https://github.com/mkyong/spring3-mvc-maven-xml-hello-world
+$ cd spring3-mvc-maven-xml-hello-world
 $ mvn jetty:run
 ```
 Access ```http://localhost:8080/spring3```
