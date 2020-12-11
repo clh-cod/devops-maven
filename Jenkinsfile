@@ -2,24 +2,21 @@ pipeline {
     agent any
 
     stages {
-        stage('拉取代码') {
+        stage('Build') {
             steps {
-                echo '拉取代码'
+                echo 'Building..'
             }
         }
-        stage('编译') {
+        stage('Test') {
             steps {
-                echo '编译'
-                sh '''cd spring3-mvc-maven-xml-hello-world 
-                mvn package -Dmaven.skip.test=true
-                        cd ../'''
+                echo 'Testing..'
             }
         }
-        stage('部署') {
+        stage('Deploy') {
             steps {
-                echo '部署'
+                echo 'Deploying....'
+				echo 'success'
             }
         }
-        
     }
 }
