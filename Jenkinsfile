@@ -8,7 +8,6 @@ pipeline {
             }
         }
         stage('编译') {
-            agent { docker 'maven:3-alpine' }
             steps {
                 echo '编译'
                 sh '''cd spring3-mvc-maven-xml-hello-world 
