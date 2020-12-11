@@ -19,7 +19,7 @@ pipeline {
         }
         stage('部署') {
             steps {
-                echo '编译'
+                echo '部署'
                 // sshPublisher(publishers: [sshPublisherDesc(configName: '192.168.29.146', transfers: [], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
             }
         }
