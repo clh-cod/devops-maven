@@ -4,7 +4,6 @@ pipeline {
     stage('拉取代码') {
       steps {
         echo '拉取代码'
-        checkout(scm: [$class: 'SubversionSCM', locations: [[cancelProcessOnExternalsFail: true,  credentialsId: 'svn-secret', depthOption: 'infinity', ignoreExternalsOption: true, local: '.', remote: 'svn://116.62.111.4/svn']], quietOperation: true, workspaceUpdater: [$class: 'UpdateUpdater']], poll: false)
       }
     }
     stage('编译打包') {
